@@ -1,0 +1,9 @@
+# Update software
+alias update="sudo apt update && sudo apt upgrade"
+
+# Git
+export GIT_BIN='/usr/bin/git'
+
+# nvim
+export NVIM_BIN="$HOME/neovim/bin/nvim"
+

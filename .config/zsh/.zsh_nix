@@ -1,0 +1,8 @@
+# Rebuild and switch
+alias rebuild='sudo nixos-rebuild switch'
+
+# Git
+export GIT_BIN='/etc/profiles/per-user/alastair/bin/git'
+
+# Add nvim to path
+export NVIM_BIN='/etc/profiles/per-user/alastair/bin/nvim'

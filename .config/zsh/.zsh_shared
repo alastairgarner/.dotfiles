@@ -1,0 +1,30 @@
+# If zsh was built locally, source the fzf.zsh.
+# If installed using a package manager this is redundant
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Set up fzf key bindings
+source <(fzf --zsh)
+
+# Git
+alias glog='git log --oneline --decorate --graph'
+alias config='$GIT_BIN --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Add nvim to path
+export PATH="$(dirname $NVIM_BIN):$PATH"
+export EDITOR="$NVIM_BIN"
+export SUDO_EDITOR="$NVIM_BIN"
+export GIT_EDITOR="$NVIM_BIN"
+export VISUAL="$NVIM_BIN"
+
+# fzf
+alias fzn='nvim $(fzf)'
+
+# Send a push notifcation with Pushover
+function push {
+  curl \
+    -F "token=${PUSHOVER_API_TOKEN}" \
+    -F "user=${PUSHOVER_USER_TOKEN}" \
+    -F "title=$1" \
+    -F "message=$2" \
+    https://api.pushover.net/1/messages.json
+}
