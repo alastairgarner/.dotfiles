@@ -32,8 +32,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Source .env.
-if [[ -s "${ZDOTDIR:-$HOME}/.env" ]]; then
-  source "${ZDOTDIR:-$HOME}/.env"
+if [[ -s "$HOME/.env" ]]; then
+  source "$HOME/.env"
 fi
 
 source_config_for_os
