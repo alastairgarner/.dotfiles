@@ -108,6 +108,7 @@
       tmux
       gcc_multi
       curl
+      unzip
       git
       # System
       (nerdfonts.override { fonts = [ "Meslo" ]; })
