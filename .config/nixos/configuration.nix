@@ -111,7 +111,7 @@
       unzip
       git
       # System
-      (nerdfonts.override { fonts = [ "Meslo" ]; })
+      nerd-fonts.meslo-lg
       tailscale
       syncthing
       # GUI
