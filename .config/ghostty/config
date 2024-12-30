@@ -1,3 +1,7 @@
 theme = Afterglow
 
 font-family = "MesloLGS Nerd Font Mono"
+
+macos-titlebar-style = hidden
+window-padding-x = 8
+window-padding-y = 8,0
