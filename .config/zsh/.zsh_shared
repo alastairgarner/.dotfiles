@@ -19,8 +19,10 @@ export VISUAL="$NVIM_BIN"
 # fzf
 alias fzn='nvim $(fzf)'
 
-# zoxide
+# Zoxide
 eval "$(zoxide init zsh)"
+
+alias cd="z"
 
 # Send a push notifcation with Pushover
 function push {

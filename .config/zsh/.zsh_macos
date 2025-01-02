@@ -15,9 +15,6 @@ export GIT_BIN='/usr/bin/git'
 # nvim
 export NVIM_BIN='/usr/local/bin/nvim'
 
-# Zoxide
-alias cd="z"
-
 # MongoDB
 alias mongod="ulimit -n 64000 && mongod --ipv6 --replSet rs0 --dbpath /Users/alastair/mongo-data/db/"
 alias mongo="mongosh mongodb+srv://$MONGODB_DEV_USERNAME:$MONGODB_DEV_PASSWORD@$MONGODB_DEV_URI"
