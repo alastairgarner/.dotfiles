@@ -1,6 +1,7 @@
-theme = Afterglow
+theme = catppuccin-mocha
 
 font-family = "MesloLGS Nerd Font Mono"
+font-feature = -liga
 
 macos-titlebar-style = hidden
 window-padding-x = 8

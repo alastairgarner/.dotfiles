@@ -15,14 +15,17 @@ export GIT_BIN='/usr/bin/git'
 # nvim
 export NVIM_BIN='/usr/local/bin/nvim'
 
+# Zoxide
+alias cd="z"
+
 # MongoDB
 alias mongod="ulimit -n 64000 && mongod --ipv6 --replSet rs0 --dbpath /Users/alastair/mongo-data/db/"
 alias mongo="mongosh mongodb+srv://$MONGODB_DEV_USERNAME:$MONGODB_DEV_PASSWORD@$MONGODB_DEV_URI"
 
 # Second Nature
-alias sn-web='cd /Users/alastair/sn-web/ && nvm use'
-alias sn-app='cd /Users/alastair/sn-app/ && nvm use && rbenv version'
-alias sn-worker='cd /Users/alastair/sn-worker/ && nvm use'
+# alias sn-web='cd /Users/alastair/sn-web/ && nvm use'
+# alias sn-app='cd /Users/alastair/sn-app/ && nvm use && rbenv version'
+# alias sn-worker='cd /Users/alastair/sn-worker/ && nvm use'
 
 # Android development
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -30,6 +33,10 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# bun completions
+[ -s "/Users/alastair/.bun/_bun" ] && source "/Users/alastair/.bun/_bun"
+
 
 # Add command to launch Cursor from the terminal
 function cursor {
@@ -65,3 +72,28 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# nvm
+autoload -U add-zsh-hook
+
+load-nvmrc() {
+  local nvmrc_path
+  nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version
+    nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
+      nvm use
+    fi
+  elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
