@@ -110,6 +110,8 @@
       curl
       unzip
       git
+      zoxide
+      bat
       # System
       nerd-fonts.meslo-lg
       tailscale
