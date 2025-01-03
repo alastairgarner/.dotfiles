@@ -34,7 +34,6 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'history' \
-  'directory' \
   'spectrum' \
   'utility' \
   'node' \
