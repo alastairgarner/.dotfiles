@@ -129,16 +129,28 @@
     "editor.formatOnType": true
   },
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.rulers": [
+      80
+    ]
   },
   "[javascriptreact]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.rulers": [
+      80
+    ]
   },
   "[typescript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.rulers": [
+      80
+    ]
   },
   "[typescriptreact]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.rulers": [
+      80
+    ]
   },
   "[clojure]": {
     "editor.defaultFormatter": "betterthantomorrow.calva"
