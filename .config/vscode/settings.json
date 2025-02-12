@@ -1,240 +1,241 @@
 {
-  "cSpell.language": "en-GB",
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.acceptSuggestionOnEnter": "off",
-  "editor.accessibilitySupport": "off",
-  "editor.cursorSurroundingLines": 15,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.detectIndentation": false,
-  "editor.fontFamily": "MesloLGS Nerd Font, Menlo",
-  "editor.formatOnSave": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.insertSpaces": true,
-  "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "all",
-  "editor.suggestSelection": "first",
-  "editor.stickyScroll.enabled": true,
-  "editor.unicodeHighlight.ambiguousCharacters": false,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "jupyter.askForKernelRestart": false,
-  "terminal.integrated.fontFamily": "monospace",
-  "files.associations": {
-    "*.yaml": "yaml",
-    "*.config": "yaml"
-  },
-  "terminal.integrated.inheritEnv": false,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.list.openMode": "doubleClick",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "workbench.tree.indent": 12,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.editor.tabCloseButton": "off",
-  "workbench.editor.tabActionCloseVisibility": false,
-  "window.commandCenter": false,
-  "explorer.compactFolders": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.activityBar.location": "top",
-  // "breadcrumbs.enabled": false,
-  // ~~~~~~~~~~~~~~~~ THEMES ~~~~~~~~~~~~~~~~~~~~~
-  "editor.tokenColorCustomizations": {
-    "[Coffee (rainglow)]": {
-      "textMateRules": [
-        {
-          "scope": [
-            "variable.parameter"
-          ],
-          "settings": {
-            "fontStyle": "italic"
-          }
-        }
-      ]
-    }
-  },
-  // ~~~~~~~~~~~~~~~~ EXTENSIONS ~~~~~~~~~~~~~~~~~~~~~
-  "cSpell.enabledLanguageIds": [
-    "markdown",
-    "plaintext",
-    "text"
-  ],
-  "jupyter.alwaysTrustNotebooks": true,
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "terminal.integrated.commandsToSkipShell": [
-    "language-julia.interrupt"
-  ],
-  "julia.symbolCacheDownload": true,
-  "[plantuml]": {},
-  "python.formatting.provider": "black",
-  "[sql]": {
-    "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
-    "editor.rulers": [
-      80
-    ]
-  },
-  "workbench.editor.focusRecentEditorAfterClose": false,
-  "sql.format.enable": false,
-  "python.linting.flake8Enabled": true,
-  "sql.linter.run": "off",
-  "dbt.runModelCommandAdditionalParams": [
-    "--project-dir services/dbt/project/sn_redshift",
-    "--profiles-dir services/dbt/project"
-  ],
-  "workbench.sideBar.location": "right",
-  "svelte.enable-ts-plugin": true,
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
-  "redhat.telemetry.enabled": false,
-  "sqlfluff.dialect": "redshift",
-  "terminal.integrated.defaultLocation": "editor",
-  "svelte.plugin.svelte.note-new-transformation": false,
-  "liveshare.accessibility.soundsEnabled": false,
-  // Language settings
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "editor.rulers": [
-      80
-    ]
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[jsonc]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[python]": {
-    "editor.tabSize": 4,
-    "gitlens.codeLens.symbolScopes": [
-      "!Module"
-    ],
-    "editor.wordBasedSuggestions": "off",
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.rulers": [
-      89
-    ],
-    "editor.formatOnType": true
-  },
-  "[javascript]": {
-    "editor.tabSize": 2,
-    "editor.rulers": [
-      80
-    ]
-  },
-  "[javascriptreact]": {
-    "editor.tabSize": 2,
-    "editor.rulers": [
-      80
-    ]
-  },
-  "[typescript]": {
-    "editor.tabSize": 2,
-    "editor.rulers": [
-      80
-    ]
-  },
-  "[typescriptreact]": {
-    "editor.tabSize": 2,
-    "editor.rulers": [
-      80
-    ]
-  },
-  "[clojure]": {
-    "editor.defaultFormatter": "betterthantomorrow.calva"
-  },
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "[lua]": {
-    "editor.defaultFormatter": "sumneko.lua"
-  },
-  "[astro]": {
-    "editor.tabSize": 2,
-  },
-  "python.analysis.completeFunctionParens": true,
-  "python.autoComplete.addBrackets": true,
-  "python.jediEnabled": false,
-  "python.languageServer": "Pylance",
-  // EXTENSIONS
-  // Git
-  "gitlens.defaultDateFormat": null,
-  "githubPullRequests.pullBranch": "never",
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": false,
-    "yaml": true
-  },
-  // Vim
-  "vim.leader": "<space>",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "k",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.disableExtension": true,
-  "githubPullRequests.fileListLayout": "tree",
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/env": true,
-    "**/venv": true
-  },
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/node_modules/**": true,
-    "**/env/**": true,
-    "**/venv/**": true,
-    "env-*": true
-  },
-  "C_Cpp.intelliSenseEngine": "disabled",
-  "clangd.path": "/Users/alastair/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
-  "gitlens.views.searchAndCompare.files.layout": "tree",
-  "[matlab]": {
-    "editor.defaultFormatter": "MathWorks.language-matlab"
-  },
-  "MATLAB.matlabConnectionTiming": "never",
-  "matlab.linterConfig": "",
-  "matlab.mlintpath": "/Applications/MATLAB_R2020a.app/bin/maci64/mlint",
-  "matlab.matlabpath": "/Applications/MATLAB_R2020a.app/bin/matlab",
-  "[markdown]": {
+    "cSpell.language": "en-GB",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.accessibilitySupport": "off",
+    "editor.cursorSurroundingLines": 15,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "MesloLGS Nerd Font, Menlo",
+    "editor.fontSize": 12,
+    "editor.formatOnSave": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.suggestSelection": "first",
+    "editor.stickyScroll.enabled": true,
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.wordWrap": "on",
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    }
-  },
-  "github.copilot.editor.enableAutoCompletions": true,
-  "diffEditor.renderSideBySide": true,
-  "supermaven.enableFixWithSupermaven": true,
-  "supermaven.enable": {
-    "*": false
-  },
-  "workbench.colorTheme": "One Monokai",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "jupyter.askForKernelRestart": false,
+    "terminal.integrated.fontFamily": "monospace",
+    "files.associations": {
+        "*.yaml": "yaml",
+        "*.config": "yaml"
+    },
+    "terminal.integrated.inheritEnv": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.tree.indent": 12,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.editor.tabActionCloseVisibility": false,
+    "window.commandCenter": false,
+    "explorer.compactFolders": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.activityBar.location": "top",
+    // "breadcrumbs.enabled": false,
+    // ~~~~~~~~~~~~~~~~ THEMES ~~~~~~~~~~~~~~~~~~~~~
+    "editor.tokenColorCustomizations": {
+        "[Coffee (rainglow)]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
+        }
+    },
+    // ~~~~~~~~~~~~~~~~ EXTENSIONS ~~~~~~~~~~~~~~~~~~~~~
+    "cSpell.enabledLanguageIds": [
+        "markdown",
+        "plaintext",
+        "text"
+    ],
+    "jupyter.alwaysTrustNotebooks": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "[plantuml]": {},
+    "python.formatting.provider": "black",
+    "[sql]": {
+        "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
+        "editor.rulers": [
+            80
+        ]
+    },
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "sql.format.enable": false,
+    "python.linting.flake8Enabled": true,
+    "sql.linter.run": "off",
+    "dbt.runModelCommandAdditionalParams": [
+        "--project-dir services/dbt/project/sn_redshift",
+        "--profiles-dir services/dbt/project"
+    ],
+    "workbench.sideBar.location": "right",
+    "svelte.enable-ts-plugin": true,
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "redhat.telemetry.enabled": false,
+    "sqlfluff.dialect": "redshift",
+    "terminal.integrated.defaultLocation": "editor",
+    "svelte.plugin.svelte.note-new-transformation": false,
+    "liveshare.accessibility.soundsEnabled": false,
+    // Language settings
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[python]": {
+        "editor.tabSize": 4,
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.rulers": [
+            89
+        ],
+        "editor.formatOnType": true
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[clojure]": {
+        "editor.defaultFormatter": "betterthantomorrow.calva"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[lua]": {
+        "editor.defaultFormatter": "sumneko.lua"
+    },
+    "[astro]": {
+        "editor.tabSize": 2,
+    },
+    "python.analysis.completeFunctionParens": true,
+    "python.autoComplete.addBrackets": true,
+    "python.jediEnabled": false,
+    "python.languageServer": "Pylance",
+    // EXTENSIONS
+    // Git
+    "gitlens.defaultDateFormat": null,
+    "githubPullRequests.pullBranch": "never",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "yaml": true
+    },
+    // Vim
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "k",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.disableExtension": true,
+    "githubPullRequests.fileListLayout": "tree",
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/env": true,
+        "**/venv": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/env/**": true,
+        "**/venv/**": true,
+        "env-*": true
+    },
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "/Users/alastair/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/16.0.2/clangd_16.0.2/bin/clangd",
+    "gitlens.views.searchAndCompare.files.layout": "tree",
+    "[matlab]": {
+        "editor.defaultFormatter": "MathWorks.language-matlab"
+    },
+    "MATLAB.matlabConnectionTiming": "never",
+    "matlab.linterConfig": "",
+    "matlab.mlintpath": "/Applications/MATLAB_R2020a.app/bin/maci64/mlint",
+    "matlab.matlabpath": "/Applications/MATLAB_R2020a.app/bin/matlab",
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "diffEditor.renderSideBySide": true,
+    "supermaven.enableFixWithSupermaven": true,
+    "supermaven.enable": {
+        "*": false
+    },
+    "workbench.colorTheme": "One Monokai",
 }
