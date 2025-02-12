@@ -24,6 +24,10 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 
+# Copy terminal info to ssh target.
+# See https://ghostty.org/docs/help/terminfo#copy-ghostty's-terminfo-to-a-remote-machine
+function ghossh() { infocmp -x | ssh $@ -- tic -x - ;}
+
 # Send a push notifcation with Pushover
 function push {
   curl \

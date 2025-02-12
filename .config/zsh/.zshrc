@@ -41,7 +41,7 @@ fi
 # separate file, so I don't have to commit it to source control.
 
 # Utility
-alias myip="curl http://ipecho.net/plain; echo"
+alias myip="curl -s ipv4.icanhazip.com"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
