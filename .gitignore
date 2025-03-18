@@ -1,0 +1,14 @@
+# Android Studio
+.android
+
+# Podman
+containers
+
+# Raycast extensions
+raycast
+
+# Swift Package Manager
+swiftpm
+
+# VSCode profiles
+**/vscode/profiles/
