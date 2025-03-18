@@ -7,6 +7,10 @@ There is no way (as far as I know) to set a custom path for your VSCode config f
 ln -s ~/.dotfiles/.config/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ln -s ~/.dotfiles/.config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
+# Commands for Insiders build
+ln -s ~/.dotfiles/.config/vscode/keybindings.json ~/Library/Application\ Support/Code\ -\ Insiders/User/keybindings.json
+ln -s ~/.dotfiles/.config/vscode/settings.json ~/Library/Application\ Support/Code\ -\ Insiders/User/settings.json
+
 # Cursor
 ln -s ~/.dotfiles/.config/vscode/keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
 ln -s ~/.dotfiles/.config/vscode/settings.json ~/Library/Application\ Support/Cursor/User/settings.json

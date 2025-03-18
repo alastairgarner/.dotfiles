@@ -239,4 +239,5 @@
   },
   "workbench.colorTheme": "One Monokai",
   "window.customTitleBarVisibility": "auto",
+  "zig.zls.enabled": "on",
 }
