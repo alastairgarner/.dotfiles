@@ -32,16 +32,6 @@
     "when": "isInDiffEditor && !operationInProgress"
   },
   {
-    "key": "alt+j",
-    "command": "editor.action.revealDefinition",
-    "when": "editorHasDefinitionProvider && editorTextFocus"
-  },
-  {
-    "key": "f12",
-    "command": "-editor.action.revealDefinition",
-    "when": "editorHasDefinitionProvider && editorTextFocus"
-  },
-  {
     "key": "ctrl+f",
     "command": "-cursorRight",
     "when": "textInputFocus"
@@ -67,11 +57,6 @@
     "when": "accessibilityHelpIsShown && accessibleViewHasUnassignedKeybindings"
   },
   {
-    "key": "alt+k",
-    "command": "workbench.action.navigateBack",
-    "when": "canNavigateBack"
-  },
-  {
     "key": "shift+cmd+c",
     "command": "-workbench.action.terminal.openNativeConsole",
     "when": "!terminalFocus"
@@ -95,5 +80,15 @@
     "key": "cmd+k shift+alt+cmd+c",
     "command": "-copyRelativeFilePath",
     "when": "editorFocus"
+  },
+  {
+    "key": "shift+alt+j",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus"
   }
 ]

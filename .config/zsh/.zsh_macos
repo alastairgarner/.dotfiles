@@ -9,6 +9,9 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # alias python=python3.11
 # alias python3=python3.11
 
+# Rust
+. "$HOME/.cargo/env"
+
 # Git
 export GIT_BIN='/usr/bin/git'
 

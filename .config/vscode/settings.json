@@ -56,6 +56,7 @@
     }
   },
   // ~~~~~~~~~~~~~~~~ EXTENSIONS ~~~~~~~~~~~~~~~~~~~~~
+  "dev.containers.dockerPath": "podman",
   "cSpell.enabledLanguageIds": [
     "markdown",
     "plaintext",
@@ -123,7 +124,7 @@
       "!Module"
     ],
     "editor.wordBasedSuggestions": "off",
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.rulers": [
       89
     ],
@@ -164,6 +165,7 @@
   },
   "[astro]": {
     "editor.tabSize": 2,
+    "editor.defaultFormatter": "astro-build.astro-vscode",
   },
   "python.analysis.completeFunctionParens": true,
   "python.autoComplete.addBrackets": true,
@@ -224,7 +226,8 @@
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120,
+    "editor.wordWrap": "bounded",
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
@@ -237,7 +240,7 @@
   "supermaven.enable": {
     "*": false
   },
-  "workbench.colorTheme": "One Monokai",
   "window.customTitleBarVisibility": "auto",
   "zig.zls.enabled": "on",
+  "workbench.colorTheme": "One Monokai",
 }
