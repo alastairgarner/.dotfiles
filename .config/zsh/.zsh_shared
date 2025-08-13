@@ -6,7 +6,11 @@
 source <(fzf --zsh)
 
 # Git
-alias glog='git log --oneline --decorate --graph'
+
+# Compare the current branch against another branch
+# Pass in the branch you want to compare to, i.e. `gcmp origin/main`
+alias glog='git log --oneline --decorate --graph HEAD'
+
 alias config='$GIT_BIN --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Add nvim to path
