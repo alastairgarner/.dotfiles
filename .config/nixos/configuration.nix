@@ -112,6 +112,7 @@
       git
       zoxide
       bat
+      qpdf
       # System
       nerd-fonts.meslo-lg
       tailscale
