@@ -44,15 +44,11 @@ function push {
 
 # FZF completion for git checkout (gco) command
 
-get_recent_branches() {
+function get_recent_branches() {
     git for-each-ref --count 100 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 }
 
-_fzf_complete_gco() {
+function _fzf_complete_gco() {
     local opts="--layout reverse"
     _fzf_complete "$opts" "$@" < <(get_recent_branches)
-}
-
-fco() {
-    get_recent_branches() | fzf --layout reverse)
 }
