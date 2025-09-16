@@ -6,8 +6,20 @@ This repo is for managing my dotfiles across different machines
 
 **Dependencies**
 
-- Git
+- Git (configured with SSH keys)
 - GNU Stow
+- ZSH
+
+```bash
+# Update the system
+sudo apt-get update && sudo apt-get upgrade
+
+# Install dependencies
+sudo apt install git stow zsh
+
+# Set default shell to zsh
+chsh -s $(which zsh)
+```
 
 **Steps**
 

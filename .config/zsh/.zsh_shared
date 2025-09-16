@@ -10,6 +10,9 @@ source <(fzf --zsh)
 # Compare the current branch against another branch
 # Pass in the branch you want to compare to, i.e. `gcmp origin/main`
 alias glog='git log --oneline --decorate --graph HEAD'
+# https://fortes.com/2022/make-git-better-with-fzf/
+alias addm="git ls-files --deleted --modified --other --exclude-standard | fzf -0 -m --preview 'git diff --color=always {-1}' | xargs -r git add"
+alias addmp="git ls-files --deleted --modified --exclude-standard | fzf -0 -m --preview 'git diff --color=always {-1}' | xargs -r -o git add -p"
 
 alias config='$GIT_BIN --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
@@ -45,7 +48,7 @@ function push {
 # FZF completion for git checkout (gco) command
 
 function get_recent_branches() {
-    git for-each-ref --count 100 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+    git for-each-ref --count 500 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 }
 
 function _fzf_complete_gco() {
