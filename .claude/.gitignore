@@ -1,0 +1,10 @@
+# Ignore all files by default
+/*
+
+!.gitignore
+
+# Except the configurable bits
+!settings.json
+!agents/
+!commands/
+!skills/
