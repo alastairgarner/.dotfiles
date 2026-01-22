@@ -1,0 +1,26 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+    name = alastair
+    email = garneralastair@gmail.com
+
+[init]
+    defaultBranch = main
+
+[column]
+    ui = auto
+
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+
+[rebase]
+    updateRefs = true
+    autoStash = true
