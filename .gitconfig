@@ -24,3 +24,9 @@
 [rebase]
     updateRefs = true
     autoStash = true
+
+# https://fortes.com/2022/make-git-better-with-fzf/
+# https://github.com/fortes/dotfiles/blob/main/stowed-files/git/.config/git/config
+# [alias]
+#     fa = "!git ls-files --deleted --modified --other --exclude-standard | fzf -0 -m --preview 'git diff --color=always {-1}' | xargs -r git add"
+#     fr = "!git diff --name-only --cached | fzf -0 -m --preview 'git diff --color=always {-1}' | xargs -r git reset"
