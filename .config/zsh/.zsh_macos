@@ -6,7 +6,7 @@ alias brupdate="brew update && brew upgrade"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Python
-# alias python=python3.11
+alias python=python3.11
 # alias python3=python3.11
 
 # Rust
@@ -37,18 +37,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # bun completions
 [ -s "/Users/alastair/.bun/_bun" ] && source "/Users/alastair/.bun/_bun"
 
-
-# Add command to launch Cursor from the terminal
-function cursor {
-    if [[ $# = 0 ]]
-    then
-        open -a "Cursor"
-    else
-        local argPath="$1"
-        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
-        open -a "Cursor" "$argPath"
-    fi
-}
 
 # Required by pdm
 export PATH=/Users/alastair/.local/bin:$PATH

@@ -1,3 +1,5 @@
+zmodload zsh/zprof
+
 source_config_for_os() {
   if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "MacOS"
@@ -56,3 +58,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# zprof

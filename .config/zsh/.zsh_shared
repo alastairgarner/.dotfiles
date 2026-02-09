@@ -14,6 +14,7 @@ alias glog='git log --oneline --decorate --graph HEAD'
 alias fad="git ls-files --deleted --modified --other --exclude-standard | fzf -0 -m --preview 'git diff --color=always {-1}' | xargs -r git add"
 alias frs="git diff --name-only --cached | fzf -0 -m --preview 'git diff --color=always {-1}' | xargs -r git reset"
 
+alias gsw="git switch"
 alias gcw="git commit -m 'WIP' -n"
 
 alias config='$GIT_BIN --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -54,6 +55,11 @@ function get_recent_branches() {
 }
 
 function _fzf_complete_gco() {
+    local opts="--layout reverse"
+    _fzf_complete "$opts" "$@" < <(get_recent_branches)
+}
+
+function _fzf_complete_gsw() {
     local opts="--layout reverse"
     _fzf_complete "$opts" "$@" < <(get_recent_branches)
 }

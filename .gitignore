@@ -12,3 +12,12 @@ swiftpm
 
 # VSCode profiles
 **/vscode/profiles/
+
+.DS_Store
+
+karabiner
+kanata
+crossnote
+gh
+github-copilot
+configstore
