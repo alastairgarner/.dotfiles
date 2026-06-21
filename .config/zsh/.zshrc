@@ -13,6 +13,9 @@ source_config_for_os() {
   if [[ $OS == *"Debian"* ]]; then
     echo "Debian"
     source "${ZDOTDIR:-$HOME}/.zsh_debian"
+  elif [[ $OS == *"Fedora"* ]]; then
+    echo "Fedora"
+    source "${ZDOTDIR:-$HOME}/.zsh_fedora"
   elif [[ $OS == *"Nix"* ]]; then
     echo "NixOS"
     source "${ZDOTDIR:-$HOME}/.zsh_nix"
