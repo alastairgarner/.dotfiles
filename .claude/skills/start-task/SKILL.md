@@ -19,7 +19,7 @@ Ask questions one or two at a time. Don't overwhelm me.
 
 ## Phase 2: Write the Spec
 
-Once we've discussed enough, write a spec to `.opencode/specs/<task-name>.md` with:
+Once we've discussed enough, write a spec to `.local/{date}-spec-{task-name}.md` (date as `YYYY-MM-DD`, task name in kebab-case) with:
 
 - **Summary**: One sentence
 - **Requirements**: Numbered list of specific things to build
@@ -36,5 +36,6 @@ During implementation:
 - Work through requirements methodically
 - After completing significant chunks, ask @review to check the code
 - Address review feedback before continuing
+- If you need to deviate from the spec, you MUST discuss and get approval first
 
 Do NOT write any code until I explicitly approve the spec.

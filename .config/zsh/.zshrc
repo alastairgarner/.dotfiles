@@ -62,4 +62,12 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Claude
+export CLAUDE_CODE_DISABLE_AUTO_MEMORY=1  # Force off
+export CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=false
+
 # zprof
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
