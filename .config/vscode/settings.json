@@ -40,6 +40,12 @@
   "explorer.compactFolders": false,
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {
+    "tab.activeBorderTop": "#ffcc00",
+    "tab.activeBackground": "#3a3d41",
+    "tab.unfocusedActiveBorderTop": "#997a00",
+    // "tab.activeForeground": "#ffffff"
+  },
   // "breadcrumbs.enabled": false,
   // ~~~~~~~~~~~~~~~~ THEMES ~~~~~~~~~~~~~~~~~~~~~
   "editor.tokenColorCustomizations": {
@@ -251,5 +257,15 @@
   "workbench.editor.enablePreview": false,
   "claudeCode.preferredLocation": "panel",
   "explorer.confirmPasteNative": false,
-  "git.autoRepositoryDetection": "openEditors"
+  "git.autoRepositoryDetection": "openEditors",
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true
+  }
 }
