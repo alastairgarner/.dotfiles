@@ -1,3 +1,79 @@
 {
-  "alwaysThinkingEnabled": true
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:*)",
+      "WebSearch"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/.env)",
+      "Read(./**/.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env*)",
+      "Read(**/.env.*)",
+      "Bash(cat *.env*)",
+      "Bash(grep *.env*)",
+      "Bash(less *.env*)",
+      "Read(/Users/alastair/forte/**/.env)"
+    ],
+    "defaultMode": "default"
+  },
+  "model": "opus[1m]",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Be extremely concise. Sacrifice grammar for the sake of concision.'"
+          },
+          {
+            "type": "command",
+            "command": "echo 'REMEMBER: Do not make code changes without explicit consent.'"
+          },
+          {
+            "type": "command",
+            "command": "echo 'NEVER: git commit or create pull requests unless directed to'"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Be extremely concise. Sacrifice grammar for the sake of concision.'"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "ponytail@ponytail": true,
+    "mattpocock-skills@claude-plugins-official": false
+  },
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    }
+  },
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "high"
 }
