@@ -13,6 +13,8 @@ alias frs="git diff --name-only --cached | fzf -0 -m --preview 'git diff --color
 
 # Compare the current branch against another branch
 # Pass in the branch you want to compare to, i.e. `gcmp origin/main`.
+git-branch-current() { git symbolic-ref --quiet --short HEAD }
+
 alias glog='git log --oneline --decorate --graph HEAD'
 alias gfa='git fetch --all'
 alias gpf='git push --force-with-lease'
@@ -21,6 +23,7 @@ alias gcw="git commit -m 'WIP' -n"
 alias gco='git checkout'
 alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
 alias gs='gh stack'
+alias gid='git diff --no-ext-diff --cached'
 
 alias config='$GIT_BIN --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
