@@ -1,0 +1,15 @@
+# Ignore all files by default
+/*
+!.gitignore
+
+# Except the configurable bits
+!ghostty/
+!git/
+!ngrok/
+!nixos/
+!nvim/
+!opencode/
+!tmux/
+!vscode/
+!zsh/
+

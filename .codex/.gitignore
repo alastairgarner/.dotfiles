@@ -1,0 +1,7 @@
+# Ignore all files by default
+/*
+
+!.gitignore
+
+# Except the configurable bits
+!config.toml
