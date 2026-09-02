@@ -7,15 +7,19 @@ source <(fzf --zsh)
 
 # Git
 
-# Compare the current branch against another branch
-# Pass in the branch you want to compare to, i.e. `gcmp origin/main`
-alias glog='git log --oneline --decorate --graph HEAD'
 # https://fortes.com/2022/make-git-better-with-fzf/
 alias fad="git ls-files --deleted --modified --other --exclude-standard | fzf -0 -m --preview 'git diff --color=always {-1}' | xargs -r git add"
 alias frs="git diff --name-only --cached | fzf -0 -m --preview 'git diff --color=always {-1}' | xargs -r git reset"
 
+# Compare the current branch against another branch
+# Pass in the branch you want to compare to, i.e. `gcmp origin/main`.
+alias glog='git log --oneline --decorate --graph HEAD'
+alias gfa='git fetch --all'
+alias gpf='git push --force-with-lease'
 alias gsw="git switch"
 alias gcw="git commit -m 'WIP' -n"
+alias gco='git checkout'
+alias gs='gh stack'
 
 alias config='$GIT_BIN --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
@@ -31,6 +35,9 @@ alias fzn='nvim $(fzf)'
 
 # Zoxide
 eval "$(zoxide init zsh)"
+
+# Opencode
+export OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS=true
 
 alias cd="z"
 

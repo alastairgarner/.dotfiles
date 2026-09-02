@@ -42,7 +42,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # bun completions
 [ -s "/Users/alastair/.bun/_bun" ] && source "/Users/alastair/.bun/_bun"
 
-
 # Required by pdm
 export PATH=/Users/alastair/.local/bin:$PATH
 
