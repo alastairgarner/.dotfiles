@@ -19,6 +19,7 @@ alias gpf='git push --force-with-lease'
 alias gsw="git switch"
 alias gcw="git commit -m 'WIP' -n"
 alias gco='git checkout'
+alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
 alias gs='gh stack'
 
 alias config='$GIT_BIN --git-dir=$HOME/.cfg/ --work-tree=$HOME'
