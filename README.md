@@ -31,9 +31,13 @@ git clone git@github.com:alastairgarner/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 git submodule update --init --recursive
 
-# Create symlinks in ~/ for everything in ~/.dotfiles
+# Keep ~/.config real so other repositories can Stow their own config there
+mkdir -p ~/.config
+
+# Link non-AI dotfiles
 stow .
 
+# Set up AI config separately from ~/.ai-dotfiles if wanted
 # Restart the terminal
 ```
 
