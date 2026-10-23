@@ -24,6 +24,7 @@ alias gco='git checkout'
 alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
 alias gs='gh stack'
 alias gid='git diff --no-ext-diff --cached'
+alias gws='git status --ignore-submodules=none --short'
 
 alias config='$GIT_BIN --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
