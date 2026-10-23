@@ -7,3 +7,4 @@ export GIT_BIN='/usr/bin/git'
 # nvim
 export NVIM_BIN="$HOME/neovim/bin/nvim"
 
+export PATH="$HOME/.local/bin:$PATH"
