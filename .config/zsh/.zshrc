@@ -79,3 +79,12 @@ export CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=false
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Keep Pi on the default Node version, independent of project .nvmrc files.
+pi() {
+  if (( $+functions[nvm] )); then
+    nvm exec --silent default pi "$@"
+  else
+    command pi "$@"
+  fi
+}
